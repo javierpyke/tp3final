@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ParcialTP3</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="search_flight_frag_title">Offers</string>
+    <string name="discount_card_little_body">Limited time offer!</string>
+    <string name="search_card_tab_item_1">One way</string>
+    <string name="search_card_tab_item_2">Round trip</string>
+    <string name="search_card_txt_input_1">From</string>
+    <string name="search_card_txt_input_2">To</string>
+    <string name="search_card_txt_input_3">Date</string>
+    <string name="search_card_txt_input_4">Passenger</string>
+    <string name="search_card_txt_input_5">Class</string>
+    <string name="search_card_txt_input_btn">Search</string>
+
+
+    <string name="flight_card_from">From</string>
+    <string name="flight_card_btn">View Details</string>
+
+    <string name="best_destination_info">Spend 5 days and 4 nights in one of the best islands in the world! Bask in the sun while walking in the white sand beach and enjoy the night partying at the popular seaside bars.</string>
+
+
+
+
+
+
+
+    <string name="list_chip_all">All</string>
+    <string name="list_chip_pizza">Pizza</string>
+    <string name="list_chip_burgers">Burgers</string>
+    <string name="list_chip_tacos">Tacos</string>
+
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/pruebaFragment2">
+
+    <fragment
+        android:id="@+id/explore"
+        android:name="com.example.parcialtp3.fragments.Explore"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_explore_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/offers"
+        android:name="com.example.parcialtp3.fragments.Offers"
+        android:label="fragment_offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.parcialtp3.fragments.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="Negocio"
+            app:argType="com.example.parcialtp3.entities.BestDestinationModel" />
+        <action
+            android:id="@+id/action_profile_to_explore"
+            app:destination="@id/explore" />
+    </fragment>
+    <fragment
+        android:id="@+id/pruebaFragment2"
+        android:name="com.example.parcialtp3.fragments.PruebaFragment"
+        android:label="fragment_prueba"
+        tools:layout="@layout/fragment_prueba" >
+        <action
+            android:id="@+id/action_pruebaFragment2_to_explore"
+            app:destination="@id/explore" />
+    </fragment>
+</navigation>

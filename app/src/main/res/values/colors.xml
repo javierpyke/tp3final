@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainBg">#F8F9FB</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="skyBlueMenu">#1A6EB4</color>
+    <color name="grayMenu">#7E8B97</color>
+    <color name="blue">#3462b2</color>
+</resources>

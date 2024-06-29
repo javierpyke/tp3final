@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Explore"
+
+   >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Listado disponible"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/icon_search"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/horizontalScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/textField"
+        >
+    <com.google.android.material.chip.ChipGroup
+        app:layout_constraintTop_toBottomOf="@+id/textField"
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:singleLine="true">
+
+
+        <com.google.android.material.chip.Chip
+            app:chipBackgroundColor="#FF5252"
+            android:textColor="#FFFFFF"
+            android:id="@+id/chipAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_chip_all"
+            app:chipEndPadding="10dp"
+            app:chipStartPadding="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            app:chipBackgroundColor="#F1F4F9"
+            android:id="@+id/chip_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_chip_pizza"
+            app:chipIcon="@drawable/pizza"
+            app:chipEndPadding="10dp"
+            app:chipStartPadding="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            app:chipBackgroundColor="#F1F4F9"
+            android:id="@+id/chip_burgers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_chip_burgers"
+            app:chipIcon="@drawable/burgers"
+            app:chipEndPadding="10dp"
+            app:chipStartPadding="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            app:chipBackgroundColor="#F1F4F9"
+            android:id="@+id/chip_tacos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_chip_tacos"
+            app:chipIcon="@drawable/tacos"
+            app:chipEndPadding="10dp"
+            app:chipStartPadding="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            />
+    </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="100dp"
+        android:id="@+id/trending_destinations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

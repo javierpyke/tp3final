@@ -1,7 +1,7 @@
 package com.example.parcialtp3.holders
 
-import com.example.parcialtp3.entities.BestDestinationModel
+import com.example.parcialtp3.entities.FoodMarketModel
 
 interface OnViewItemClickedListener {
-    fun onViewItemDetail(negocio: BestDestinationModel)
+    fun onViewItemDetail(negocio: FoodMarketModel)
 }

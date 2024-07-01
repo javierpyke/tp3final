@@ -6,4 +6,6 @@
     <color name="skyBlueMenu">#1A6EB4</color>
     <color name="grayMenu">#7E8B97</color>
     <color name="blue">#3462b2</color>
+
+    <color name="redCustom">#FF5252</color>
 </resources>

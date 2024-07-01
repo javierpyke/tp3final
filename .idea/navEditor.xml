@@ -51,18 +51,18 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="explore">
+                  <entry key="details">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="368" />
+                            <option name="x" value="111" />
+                            <option name="y" value="423" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_explore_to_profile">
+                            <entry key="action_details_to_list">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -72,7 +72,19 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="offers">
+                  <entry key="historicoFragment2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="283" />
+                            <option name="y" value="-155" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="intro">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -81,33 +93,30 @@
                             <option name="y" value="12" />
                           </Point>
                         </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_intro_to_list">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="profile">
+                  <entry key="list">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
                             <option name="x" value="500" />
-                            <option name="y" value="368" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="pruebaFragment2">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="368" />
+                            <option name="y" value="148" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_pruebaFragment2_to_explore">
+                            <entry key="action_list_to_details">
                               <value>
                                 <LayoutPositions />
                               </value>

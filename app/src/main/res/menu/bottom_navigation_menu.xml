@@ -2,15 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/explore"
-        android:title="Listado"
-        android:icon="@drawable/explore_icon"/>
+        android:id="@+id/list"
+        android:title="@string/bnm_member1_title"
+        android:icon="@drawable/icon_home"
+        android:iconTint="@color/black"
+    />
     <item
-        android:id="@+id/search"
-        android:title="Actualizar"
+        android:id="@+id/intro"
+        android:title="@string/bnm_member2_title"
         />
     <item
-        android:id="@+id/profile"
-        android:title="Historico"
-        android:icon="@drawable/profile_icon"/>
+        android:id="@+id/historico"
+        android:title="@string/bnm_member3_title"
+        android:icon="@drawable/icon_stat"/>
 </menu>

@@ -1,0 +1,351 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/imgViewFoodMarket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="300dp"
+            android:padding="20dp">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:icon="@drawable/back_icon"
+                app:iconTint="@color/black"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                android:backgroundTint="#FFFFFF"
+                android:id="@+id/btnBackDetails"
+                app:cornerRadius="50dp"
+
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:cardCornerRadius="30dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtNameFoodMarket"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/imageButtonFoodMarket"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/heart_red"
+                                android:layout_alignParentRight="true"/>
+
+
+                        </RelativeLayout
+                            >
+
+                        <TextView
+                            android:id="@+id/txtDescriptionFoodMarket"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?attr/textAppearanceBody1"
+                            android:textColor="?android:attr/textColorSecondary" />
+                    </LinearLayout>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Title, secondary and supporting text -->
+                        <ImageView
+                            android:id="@+id/imgViewUbicacion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/map_pin_icon" />
+
+                        <TextView
+                            android:id="@+id/txtViewUbicacion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detail_txt_ubicacion"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Title, secondary and supporting text -->
+                        <ImageView
+                            android:id="@+id/imgViewClock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/clock_icon" />
+
+                        <TextView
+                            android:id="@+id/txtViewClock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detail_txt_time"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/txtViewMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail_txt_menu"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/mainCardAddFood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="20dp"
+
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutAddFood"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:id="@+id/imgViewAddFood"
+                                        android:layout_width="140dp"
+                                        android:layout_height="100dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:scaleType="centerCrop"
+
+                                        android:src="@drawable/cheese_nachos" />
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayoutAddFood2"
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtAddFoodTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/detail_txt_title_food"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/txtAddFoodPrice"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="@string/detail_txt_price_food"
+                                        android:textAppearance="?attr/textAppearanceBody2"
+                                        android:textColor="?android:attr/textColorSecondary"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <ImageButton
+                                    android:id="@+id/imageButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/select" />
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/mainCardAddFood2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="20dp"
+
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutAddFood3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:id="@+id/imgViewAddFood2"
+                                        android:layout_width="140dp"
+                                        android:layout_height="100dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:scaleType="centerCrop"
+
+                                        android:src="@drawable/veggie_burrito" />
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayoutAddFood4"
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtAddFoodTitle2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/detail_txt_title_food2"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/txtAddFoodPrice2"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="@string/detail_txt_price_food2"
+                                        android:textAppearance="?attr/textAppearanceBody2"
+                                        android:textColor="?android:attr/textColorSecondary"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <ImageButton
+                                    android:id="@+id/imageButton5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/selected" />
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

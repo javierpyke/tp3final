@@ -3,41 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/pruebaFragment2">
+    app:startDestination="@id/intro">
 
     <fragment
-        android:id="@+id/explore"
-        android:name="com.example.parcialtp3.fragments.Explore"
+        android:id="@+id/list"
+        android:name="com.example.parcialtp3.fragments.ListFragment"
         android:label="fragment_explore"
-        tools:layout="@layout/fragment_explore" >
+        tools:layout="@layout/fragment_list" >
         <action
-            android:id="@+id/action_explore_to_profile"
-            app:destination="@id/profile" />
+            android:id="@+id/action_list_to_details"
+            app:destination="@id/details" />
     </fragment>
     <fragment
-        android:id="@+id/offers"
-        android:name="com.example.parcialtp3.fragments.Offers"
-        android:label="fragment_offers"
-        tools:layout="@layout/fragment_offers" />
-    <fragment
-        android:id="@+id/profile"
-        android:name="com.example.parcialtp3.fragments.Profile"
+        android:id="@+id/details"
+        android:name="com.example.parcialtp3.fragments.DetailFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
-        <argument
-            android:name="Negocio"
-            app:argType="com.example.parcialtp3.entities.BestDestinationModel" />
+        tools:layout="@layout/fragment_detail" >
         <action
-            android:id="@+id/action_profile_to_explore"
-            app:destination="@id/explore" />
+            android:id="@+id/action_details_to_list"
+            app:destination="@id/list" />
+        <argument
+            android:name="negocio"
+            app:argType="com.example.parcialtp3.entities.FoodMarketModel" />
     </fragment>
     <fragment
-        android:id="@+id/pruebaFragment2"
-        android:name="com.example.parcialtp3.fragments.PruebaFragment"
+        android:id="@+id/intro"
+        android:name="com.example.parcialtp3.fragments.IntroFragment"
         android:label="fragment_prueba"
-        tools:layout="@layout/fragment_prueba" >
+        tools:layout="@layout/fragment_intro" >
         <action
-            android:id="@+id/action_pruebaFragment2_to_explore"
-            app:destination="@id/explore" />
+            android:id="@+id/action_intro_to_list"
+            app:destination="@id/list" />
     </fragment>
+    <fragment
+        android:id="@+id/historico"
+        android:name="com.example.parcialtp3.fragments.HistoricoFragment"
+        android:label="fragment_historico"
+        tools:layout="@layout/fragment_historico" />
 </navigation>

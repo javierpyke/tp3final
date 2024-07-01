@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragments.IntroFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="parent"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/intro"
+            android:id="@+id/imgViewIntro"
+
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_txt_title"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceHeadline3"
+            android:textStyle="bold"
+            android:id="@+id/txtIntroTitle"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_txt_desc"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:id="@+id/txtIntroDesc"/>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/btnInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/redCustom"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/intro_btn"
+            app:cornerRadius="50dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
